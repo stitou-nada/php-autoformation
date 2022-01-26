@@ -10,8 +10,8 @@ Installation XAMPP Apache + MariaDB + PHP + Perl 🌐
      https://www.apachefriends.org/fr/index.html
 
 Pour verifier que php installer 👍 <br>
-    cmd => php -v
-        => echo %path%
+    cmd => php -v <br>
+        => echo %path% <br>
 Pour installer : <br>
   cmd =>  SET PATH=%PATH%;H:PHP <br>
 
