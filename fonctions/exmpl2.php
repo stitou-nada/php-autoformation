@@ -1,8 +1,8 @@
 <?php
 function familyName($name){
-    echo "$name stitou   ";
+    echo "$name Refsnes   ";
 }
-familyName("nada");
-familyName("youssef");
+familyName("Jani");
+familyName("Hege");
 
 ?>
