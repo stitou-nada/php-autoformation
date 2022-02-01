@@ -1,2 +1,8 @@
-Bienvenue <?php  echo $_POST = ["nom"] ; ?> <br>
-Votre age est :<?php echo  $_POST = ["age"] ;?> ans.
+<?php
+    if($_POST['name'] || $_POST['age']){
+        
+        echo "Bienvenue " . $_POST['name'] . "<br />";
+        echo "Votre age est  " . $_POST['age'] . "ans.";
+    }
+
+?>
