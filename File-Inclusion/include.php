@@ -7,9 +7,6 @@ include 'function.php';
             <h1>hello people</h1>
         </div>
     </section>
-    <?php
-    include 'function.php';
-    ?>
 
 </body>
 </html>
