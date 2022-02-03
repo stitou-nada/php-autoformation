@@ -1,5 +1,5 @@
 <?php 
  $x = 20;
- var_dump ($x) ;
-
+//  var_dump ($x) ;
+echo $x ;
 ?>
