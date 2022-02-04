@@ -18,3 +18,5 @@ Pour installer : <br>
 Pour exécuter le code : <br>
    exmple  : => cd tutoriel <br>
              => php exmpl.php 
+pour executer dans navigateur <br>
+   php -S localhost:3000
