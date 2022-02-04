@@ -16,13 +16,12 @@
             $userInput; 
             // saisire
             $listNumbers = array(1 ,10, 4, 987, 9) ;
-            $trouve = false;
-            $userInput = window.prompt('Entrez une valeur pour userInput');
+            $NUM= 5;
 
             // traitment
             for ($i = 0; $i <= 4; $i++); {
-                if ($userInput == $listNumbers[$i]) {
-                   $trouve = true;
+                if ($NUM == $listNumbers[$i]) {
+                   echo $NUM ;
                 }
             }
             if ($trouve) {
