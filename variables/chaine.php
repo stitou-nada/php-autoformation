@@ -1,8 +1,7 @@
 <?php 
-$x = "Hello world!";
+$x = "Hello world! ";
 $y = 'Hello people!';
 
-echo $x;
-echo "<br>"; 
+echo $x ;
 echo $y;
 ?>
