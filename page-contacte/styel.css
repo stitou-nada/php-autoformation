@@ -11,7 +11,7 @@ body {
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
-    position: relative
+    position: relative;
 }
 
 #contactus {
@@ -28,7 +28,7 @@ body {
     display: block;
     font-size: 30px;
     font-weight: 300;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 #contactus h4 {
