@@ -21,7 +21,7 @@
 
             // traitment
             for ($i = 0; $i <= 4; $i++); {
-                if (userInput == listNumbers[i]) {
+                if ($userInput == $listNumbers[$i]) {
                    $trouve = true;
                 }
             }
