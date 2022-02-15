@@ -1,7 +1,8 @@
+
 <?php
     // Initialisation des variables
-    $x = null;
-    $y = null;
+    $a = null;
+    $b = null;
     $operation = null;
     $afficheur = "";
     $solution = null;
@@ -9,19 +10,22 @@
     // Traitement
 
     // Récupération des variables de la page
-    if(isset($_POST['x'])) $x = $_POST['x'];
-    if(isset($_POST['y']))$y = $_POST['y'];
-    if(isset($_POST['operation'])) $operation = $_POST['operation'];
+    if(isset($_POST['a'])) 
+        $a = $_POST['a'];
+    if(isset($_POST['b']))
+        $b = $_POST['b'];
+    if(isset($_POST['operation'])) 
+       $operation = $_POST['operation'];
 
     // Ajouter la valeur du nombre au X ou Y
     if(isset($_POST['nombre'])){
         $nombre = $_POST['nombre'];
         if($operation == null){
-            if($x == null) $x = $nombre;
-            else $x = floatval($x . $nombre);
+            if($a == null) $a = $nombre;
+            else $a = floatval($a . $nombre);
         }else{
-            if($y == null) $y = $nombre;
-            else $y = floatval($y . $nombre);
+            if($b == null) $b = $nombre;
+            else $b = floatval($b . $nombre);
         }
     }
 
@@ -30,18 +34,18 @@
     
         // Calcule
         switch($operation){
-            case "+" : $solution = $x + $y;
+            case "+" : $solution = $a + $b;
                 break;
-            case "-" : $solution = $x - $y;
+            case "-" : $solution = $a - $b;
                 break;
         }
     }
     // Affichage 
     if($solution != null) $afficheur = $solution;
     else{
-        if($x != null) $afficheur = $afficheur . "$x" ;
+        if($a != null) $afficheur = $afficheur . "$a" ;
         if($operation != null) $afficheur .= " " .  $operation . " ";
-        if($y != null) $afficheur .= $y;
+        if($b != null) $afficheur .= $b;
     }
      
 ?>
@@ -55,9 +59,9 @@
 </head>
 <body>
 <form action="" method="post">
-    <input type="text" name="x" value="<?php echo $x ?>">
-    <input type="text" name="y" value="<?php echo $y ?>">
+    <input type="text" name="a" value="<?php echo $a ?>">
     <input type="text" name="operation" value="<?php echo $operation ?>">
+    <input type="text" name="b" value="<?php echo $b ?>">
     <input type="text" id="afficheur" name="afficheur" value="<?php echo $afficheur ?>" />
     <input type="submit" name="nombre" value="1"  ></input>
     <input type="submit" name="nombre" value="2"  ></input>
