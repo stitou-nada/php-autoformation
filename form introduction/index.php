@@ -10,7 +10,7 @@
     <form action="login.php" method="post">
         <label for="username">Name:</label>
         <input type="text" name="username" id="usernameInput" required>
-        <label for="password"></label>
+        <label for="password">password :</label>
         <input type="password" name="password"  id="passwordInput" required>
         <button type="submit">Login</button>
     </form>
