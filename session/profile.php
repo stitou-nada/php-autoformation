@@ -1,19 +1,14 @@
-<?php session_start()?>
+<?php
 
-<?php if(isset($_SESSION["user"])): ?>
-    <p>welcom <?= $_SESSION["user"]?></p>
-<?php endif; ?>
-
-
-<?php if(isset($_SESSION["roles"])):?>
-    <p>Current roles:</p>
-    <ul>
-        <?php foreach($_SESSION["roles"] as $role): ?>
-            <li><?= $role?></li>
-        <?php endforeach;?>
-    </ul>
-<?php endif; ?>
+$name = $_POST["name"];
+$age = $_POST["age"];
 
 
+if(isset($_POST['btn'])){
+    echo  " your Name is  : ".$_SESSION['Name'] = $name ; 
+    echo  "<br>"."your age is : ". $_SESSION["Age"]=$age;
+    
+}
 
-<a href="login.php">Logout</a>
+
+?>
