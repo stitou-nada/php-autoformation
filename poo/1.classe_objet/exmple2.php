@@ -3,10 +3,10 @@
 <body>
 
 <?php
-class Fruit {
+class Fruite {
   public $name;
 }
-$apple = new Fruit();
+$apple = new Fruite();
 $apple->name = "Apple";
 
 echo $apple->name;
