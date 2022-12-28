@@ -2,8 +2,8 @@
 
 
 <html>
-    <body>
-        <form action="profil.php" method='post'  >
+<body>
+<form action="profile.php" method='post'  >
 <input type="text" name='name'  placeholder="fname">
 <input type="text" name ='age' placeholder="age"> 
 <input type="submit" name="btn" value='login'>
