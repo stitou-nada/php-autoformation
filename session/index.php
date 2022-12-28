@@ -3,9 +3,9 @@
 
 <html>
 <body>
-<form action="profile.php" method='post'  >
-<input type="text" name='name'  placeholder="fname">
-<input type="text" name ='age' placeholder="age"> 
+<form action="db.php" method='post'  >
+<input type="text" name='email'  placeholder="email">
+<input type="text" name ='password' placeholder="password"> 
 <input type="submit" name="btn" value='login'>
 
 </form>
