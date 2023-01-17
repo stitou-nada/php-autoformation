@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+ abstract class ParentClass{
+    abstract public function prefixName($Name);
+ }
+
+ class ChildClass extends ParentClass{
+
+    public function prefixName($Name)
+    {
+        if ($Name=="nada") {
+            $prefix="Mrs.";
+        }
+        elseif ($Name=="hicham") {
+            $prefix="Mr.";
+        }
+        else{
+            $prefix= "";
+        }
+          echo "{$prefix} {$Name}";
+    }
+
+}
+$class=new ChildClass;
+echo $class->prefixName("nada");
+echo "</br>";
+echo $class->prefixName("hicham")
+
+    ?>
 </body>
 </html>
